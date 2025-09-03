@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Exercícios Interativos</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>Exercícios Interativos</h1>
+  </header>
+  <main class="card-container">
+    <a href="par-ou-impar/index.html" class="card">
+      <h2>Par ou Ímpar</h2>
+      <p>Informe um número e descubra se é par ou ímpar.</p>
+    </a>
+  </main>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contador com Passo</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <main class="container">
+    <h1>Contador com Passo</h1>
+    
+    <label for="inicio">Início:</label>
+    <input type="number" id="inicio" placeholder="Ex: 1">
+
+    <label for="fim">Fim:</label>
+    <input type="number" id="fim" placeholder="Ex: 10">
+
+    <label for="passo">Passo:</label>
+    <input type="number" id="passo" placeholder="Ex: 2">
+
+    <button onclick="contar()">Contar</button>
+
+    <div id="resultado" class="resultado"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de IMC</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Calculadora de IMC</h1>
+
+    <label for="peso">Peso (kg):</label>
+    <input type="number" id="peso" placeholder="Ex: 70">
+
+    <label for="altura">Altura (m):</label>
+    <input type="number" id="altura" step="0.01" placeholder="Ex: 1.75">
+
+    <button onclick="calcularIMC()">Calcular</button>
+
+    <div id="resultado" class="resultado"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculadora Básica</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <main class="container">
+    <h1>Calculadora Básica</h1>
+
+    <label for="valor1">Valor 1:</label>
+    <input type="number" id="valor1" placeholder="Digite o primeiro número">
+
+    <label for="valor2">Valor 2:</label>
+    <input type="number" id="valor2" placeholder="Digite o segundo número">
+
+    <label for="operacao">Operação:</label>
+    <select id="operacao">
+      <option value="soma">Adição (+)</option>
+      <option value="subtracao">Subtração (-)</option>
+      <option value="multiplicacao">Multiplicação (×)</option>
+      <option value="divisao">Divisão (÷)</option>
+    </select>
+
+    <button onclick="calcular()">Calcular</button>
+
+    <div id="resultado" class="resultado"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculadora Básica</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <main class="container">
+    <h1>Calculadora Básica</h1>
+
+    <form onsubmit="event.preventDefault(); calcular();">
+      <label for="valor1">Valor 1:</label>
+      <input type="number" id="valor1" placeholder="Digite o primeiro número" required>
+
+      <label for="valor2">Valor 2:</label>
+      <input type="number" id="valor2" placeholder="Digite o segundo número" required>
+
+      <label for="operacao">Operação:</label>
+      <select id="operacao">
+        <option value="soma">Adição (+)</option>
+        <option value="subtracao">Subtração (-)</option>
+        <option value="multiplicacao">Multiplicação (×)</option>
+        <option value="divisao">Divisão (÷)</option>
+      </select>
+
+      <button type="submit">Calcular</button>
+    </form>
+
+    <div id="resultado" class="resultado"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Verificador de Idade</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <main class="container">
+    <h1>Verificador de Idade</h1>
+
+    <label for="anoNascimento">Ano de Nascimento:</label>
+    <input type="number" id="anoNascimento" placeholder="Ex: 1990" required>
+
+    <button onclick="verificarIdade()">Verificar</button>
+
+    <div id="resultado" class="resultado"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gerador de Tabuada</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <main class="container">
+    <h1>Gerador de Tabuada</h1>
+
+    <label for="numero">Digite um número:</label>
+    <input type="number" id="numero" placeholder="Ex: 5">
+
+    <button onclick="gerarTabuada()">Gerar</button>
+
+    <ul id="resultado" class="resultado"></ul>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lista de Compras</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <main class="container">
+    <h1>Lista de Compras</h1>
+
+    <div class="form">
+      <input type="text" id="item" placeholder="Digite um item">
+      <button onclick="adicionarItem()">Adicionar</button>
+    </div>
+
+    <ul id="lista" class="lista"></ul>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Verificador de Palíndromos</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <main class="container">
+    <h1>Verificador de Palíndromos</h1>
+
+    <input type="text" id="entrada" placeholder="Digite uma palavra ou frase">
+    <button onclick="verificarPalindromo()">Verificar</button>
+
+    <div id="resultado" class="resultado"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simulador de Semáforo</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <main class="container">
+    <h1>Simulador de Semáforo</h1>
+
+    <div class="semaforo">
+      <div id="vermelho" class="luz vermelho"></div>
+      <div id="amarelo" class="luz amarelo"></div>
+      <div id="verde" class="luz verde"></div>
+    </div>
+
+    <div class="botoes">
+      <button onclick="mudarCor('vermelho')">Vermelho</button>
+      <button onclick="mudarCor('amarelo')">Amarelo</button>
+      <button onclick="mudarCor('verde')">Verde</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Caixa Eletrônico</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Simulador de Caixa Eletrônico</h1>
+    </header>
+
+    <main>
+        <section class="container">
+            <label for="valor">Digite o valor do saque (R$):</label>
+            <input type="number" id="valor" placeholder="Digite o valor" required>
+
+            <button onclick="simularCaixa()">Simular</button>
+
+            <div id="resultado"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Você</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronômetro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Cronômetro</h1>
+    </header>
+
+    <main>
+        <section class="container">
+            <div id="display">
+                <span id="minutos">00</span>:<span id="segundos">00</span>:<span id="centisegundos">00</span>
+            </div>
+            <div id="botoes">
+                <button id="iniciar" onclick="iniciar()">Iniciar</button>
+                <button id="pausar" onclick="pausar()" disabled>Pausar</button>
+                <button id="zerar" onclick="zerar()" disabled>Zerar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Você</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senhas Aleatórias</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Gerador de Senhas Aleatórias</h1>
+    </header>
+
+    <main>
+        <section class="container">
+            <label for="tamanho">Escolha o tamanho da senha:</label>
+            <input type="number" id="tamanho" min="6" max="20" value="12">
+
+            <button onclick="gerarSenha()">Gerar Senha</button>
+
+            <div id="senha-gerada">
+                <p id="senha"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Você</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Sorteio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Simulador de Sorteio</h1>
+    </header>
+
+    <main>
+        <section class="container">
+            <label for="minimo">Valor Mínimo:</label>
+            <input type="number" id="minimo" placeholder="Digite o valor mínimo">
+
+            <label for="maximo">Valor Máximo:</label>
+            <input type="number" id="maximo" placeholder="Digite o valor máximo">
+
+            <button onclick="sortear()">Sortear</button>
+
+            <div id="resultado">
+                <p id="numero-sorteado">Aguardando sorteio...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Você</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Palavras e Letras</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Contador de Palavras e Letras</h1>
+    </header>
+
+    <main>
+        <section class="container">
+            <textarea id="texto" placeholder="Digite seu texto aqui..." rows="6" cols="40"></textarea>
+
+            <button onclick="contar()">Contar</button>
+
+            <div id="resultado">
+                <p id="resultado-palavras">Palavras: 0</p>
+                <p id="resultado-letras">Letras: 0</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Você</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Números Primos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de Números Primos</h1>
+    </header>
+
+    <main>
+        <section class="container">
+            <label for="numero">Digite um número:</label>
+            <input type="number" id="numero" placeholder="Digite um número" min="1">
+            <button onclick="verificarPrimo()">Verificar</button>
+
+            <div id="resultado">
+                <p id="mensagem">Aguardando verificação...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Você</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro com Validação</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Usuário</h1>
+    </header>
+
+    <main>
+        <section class="container">
+            <form id="formCadastro" onsubmit="return validarFormulario()">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+
+                <button type="submit">Cadastrar</button>
+                <div id="erro" class="erro"></div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Você</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Adivinhação</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Jogo de Adivinhação</h1>
+    </header>
+
+    <main>
+        <section class="container">
+            <p>Eu escolhi um número entre 1 e 100. Tente adivinhar qual é!</p>
+            <label for="numero">Digite seu palpite:</label>
+            <input type="number" id="numero" placeholder="Seu palpite" min="1" max="100">
+            <button onclick="adivinhar()">Adivinhar</button>
+
+            <div id="mensagem"></div>
+            <div id="tentativas"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Você</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Notas Escolares</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Simulador de Notas Escolares</h1>
+    </header>
+
+    <main>
+        <section class="container">
+            <p>Digite suas notas e descubra sua situação:</p>
+            <form id="formNotas" onsubmit="return calcularMedia(event)">
+                <label for="nota1">Nota 1:</label>
+                <input type="number" id="nota1" placeholder="Primeira Nota" required>
+
+                <label for="nota2">Nota 2:</label>
+                <input type="number" id="nota2" placeholder="Segunda Nota" required>
+
+                <label for="nota3">Nota 3:</label>
+                <input type="number" id="nota3" placeholder="Terceira Nota" required>
+
+                <label for="nota4">Nota 4 (opcional):</label>
+                <input type="number" id="nota4" placeholder="Quarta Nota (opcional)">
+
+                <button type="submit">Calcular Média</button>
+            </form>
+
+            <div id="resultado"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Você</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Par ou Ímpar</title>
+</head>
+<body>
+    <h1>Verificar Par ou Ímpar</h1>
+    <input type="number" id="numero" placeholder="Digite um número">
+    <button onclick="verificarParImpar()">Verificar</button>
+    <p id="resultado"></p>
+
+    <script>
+        function verificarParImpar() {
+            const numero = parseInt(document.getElementById('numero').value);
+            const resultado = (numero % 2 === 0) ? "Par" : "Ímpar";
+            document.getElementById('resultado').innerText = `O número ${numero} é ${resultado}.`;
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador com Passo</title>
+</head>
+<body>
+    <h1>Contagem com Passo</h1>
+    <input type="number" id="inicio" placeholder="Número inicial">
+    <input type="number" id="fim" placeholder="Número final">
+    <input type="number" id="passo" placeholder="Valor do passo">
+    <button onclick="contar()">Contar</button>
+    <p id="resultado"></p>
+
+    <script>
+        function contar() {
+            const inicio = parseInt(document.getElementById('inicio').value);
+            const fim = parseInt(document.getElementById('fim').value);
+            const passo = parseInt(document.getElementById('passo').value);
+            let resultado = '';
+            for (let i = inicio; i <= fim; i += passo) {
+                resultado += i + ' ';
+            }
+            document.getElementById('resultado').innerText = resultado;
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+</head>
+<body>
+    <h1>Calculadora de IMC</h1>
+    <input type="number" id="peso" placeholder="Peso (kg)" step="0.1">
+    <input type="number" id="altura" placeholder="Altura (m)" step="0.01">
+    <button onclick="calcularIMC()">Calcular</button>
+    <p id="resultado"></p>
+
+    <script>
+        function calcularIMC() {
+            const peso = parseFloat(document.getElementById('peso').value);
+            const altura = parseFloat(document.getElementById('altura').value);
+            const imc = peso / (altura * altura);
+            let resultado = '';
+            if (imc < 18.5) resultado = `Abaixo do peso. IMC: ${imc.toFixed(2)}`;
+            else if (imc < 24.9) resultado = `Peso normal. IMC: ${imc.toFixed(2)}`;
+            else if (imc < 29.9) resultado = `Sobrepeso. IMC: ${imc.toFixed(2)}`;
+            else resultado = `Obesidade. IMC: ${imc.toFixed(2)}`;
+            document.getElementById('resultado').innerText = resultado;
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Básica</title>
+</head>
+<body>
+    <h1>Calculadora Básica</h1>
+    <input type="number" id="num1" placeholder="Número 1">
+    <input type="number" id="num2" placeholder="Número 2">
+    <select id="operacao">
+        <option value="soma">Soma</option>
+        <option value="subtracao">Subtração</option>
+        <option value="multiplicacao">Multiplicação</option>
+        <option value="divisao">Divisão</option>
+    </select>
+    <button onclick="calcular()">Calcular</button>
+    <p id="resultado"></p>
+
+    <script>
+        function calcular() {
+            const num1 = parseFloat(document.getElementById('num1').value);
+            const num2 = parseFloat(document.getElementById('num2').value);
+            const operacao = document.getElementById('operacao').value;
+            let resultado = 0;
+            switch (operacao) {
+                case 'soma':
+                    resultado = num1 + num2;
+                    break;
+                case 'subtracao':
+                    resultado = num1 - num2;
+                    break;
+                case 'multiplicacao':
+                    resultado = num1 * num2;
+                    break;
+                case 'divisao':
+                    resultado = num1 / num2;
+                    break;
+            }
+            document.getElementById('resultado').innerText = `Resultado: ${resultado}`;
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+</head>
+<body>
+    <h1>Verificar Idade</h1>
+    <input type="number" id="anoNascimento" placeholder="Ano de nascimento">
+    <button onclick="verificarIdade()">Verificar</button>
+    <p id="resultado"></p>
+
+    <script>
+        function verificarIdade() {
+            const anoNascimento = parseInt(document.getElementById('anoNascimento').value);
+            const anoAtual = new Date().getFullYear();
+            const idade = anoAtual - anoNascimento;
+            let resultado = '';
+            if (idade < 18) resultado = `Menor de idade. Idade: ${idade} anos.`;
+            else if (idade < 60) resultado = `Adulto. Idade: ${idade} anos.`;
+            else resultado = `Idoso. Idade: ${idade} anos.`;
+            document.getElementById('resultado').innerText = resultado;
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Tabuada</title>
+</head>
+<body>
+    <h1>Gerar Tabuada</h1>
+    <input type="number" id="numero" placeholder="Digite um número">
+    <button onclick="gerarTabuada()">Gerar</button>
+    <ul id="tabuada"></ul>
+
+    <script>
+        function gerarTabuada() {
+            const numero = parseInt(document.getElementById('numero').value);
+            let resultado = '';
+            for (let i = 1; i <= 10; i++) {
+                resultado += `<li>${numero} x ${i} = ${numero * i}</li>`;
+            }
+            document.getElementById('tabuada').innerHTML = resultado;
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+</head>
+<body>
+    <h1>Lista de Compras</h1>
+    <input type="text" id="item" placeholder="Digite o item">
+    <button onclick="adicionarItem()">Adicionar</button>
+    <ul id="listaCompras"></ul>
+
+    <script>
+        function adicionarItem() {
+            const item = document.getElementById('item').value;
+            if (item) {
+                const li = document.createElement('li');
+                li.innerText = item;
+                const botaoRemover = document.createElement('button');
+                botaoRemover.innerText = 'Remover';
+                botaoRemover.onclick = function() {
+                    li.remove();
+                };
+                li.appendChild(botaoRemover);
+                document.getElementById('listaCompras').appendChild(li);
+                document.getElementById('item').value = '';
+            }
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Palíndromos</title>
+</head>
+<body>
+    <h1>Verificar Palíndromo</h1>
+    <input type="text" id="palavra" placeholder="Digite uma palavra ou frase">
+    <button onclick="verificarPalindromo()">Verificar</button>
+    <p id="resultado"></p>
+
+    <script>
+        function verificarPalindromo() {
+            const palavra = document.getElementById('palavra').value.replace(/\s/g, '').toLowerCase();
+            const invertida = palavra.split('').reverse().join('');
+            if (palavra === invertida) {
+                document.getElementById('resultado').innerText = `"${palavra}" é um palíndromo.`;
+            } else {
+                document.getElementById('resultado').innerText = `"${palavra}" não é um palíndromo.`;
+            }
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Semáforo</title>
+</head>
+<body>
+    <h1>Simulador de Semáforo</h1>
+    <div id="semaforo" style="width: 50px; height: 150px; border: 2px solid black; display: flex; flex-direction: column; justify-content: space-between;">
+        <div id="vermelho" style="width: 100%; height: 33%; background-color: gray;"></div>
+        <div id="amarelo" style="width: 100%; height: 33%; background-color: gray;"></div>
+        <div id="verde" style="width: 100%; height: 33%; background-color: gray;"></div>
+    </div>
+    <button onclick="mudarCor('vermelho')">Vermelho</button>
+    <button onclick="mudarCor('amarelo')">Amarelo</button>
+    <button onclick="mudarCor('verde')">Verde</button>
+
+    <script>
+        function mudarCor(cor) {
+            document.getElementById('vermelho').style.backgroundColor = (cor === 'vermelho') ? 'red' : 'gray';
+            document.getElementById('amarelo').style.backgroundColor = (cor === 'amarelo') ? 'yellow' : 'gray';
+            document.getElementById('verde').style.backgroundColor = (cor === 'verde') ? 'green' : 'gray';
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Temperatura</title>
+</head>
+<body>
+    <h1>Conversor de Temperatura</h1>
+    <input type="number" id="temperatura" placeholder="Digite a temperatura">
+    <select id="escala">
+        <option value="celsius">Celsius</option>
+        <option value="fahrenheit">Fahrenheit</option>
+        <option value="kelvin">Kelvin</option>
+    </select>
+    <button onclick="converterTemperatura()">Converter</button>
+    <p id="resultado"></p>
+
+    <script>
+        function converterTemperatura() {
+            const temperatura = parseFloat(document.getElementById('temperatura').value);
+            const escala = document.getElementById('escala').value;
+            let resultado = '';
+
+            if (escala === 'celsius') {
+                resultado = `Fahrenheit: ${(temperatura * 9 / 5) + 32}°F, Kelvin: ${temperatura + 273.15}K`;
+            } else if (escala === 'fahrenheit') {
+                resultado = `Celsius: ${(temperatura - 32) * 5 / 9}°C, Kelvin: ${(temperatura - 32) * 5 / 9 + 273.15}K`;
+            } else if (escala === 'kelvin') {
+                resultado = `Celsius: ${temperatura - 273.15}°C, Fahrenheit: ${(temperatura - 273.15) * 9 / 5 + 32}°F`;
+            }
+            document.getElementById('resultado').innerText = resultado;
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Caixa Eletrônico</title>
+</head>
+<body>
+    <h1>Simulador de Caixa Eletrônico</h1>
+    <input type="number" id="valor" placeholder="Digite o valor">
+    <button onclick="calcularNotas()">Calcular Notas</button>
+    <p id="resultado"></p>
+
+    <script>
+        function calcularNotas() {
+            let valor = parseInt(document.getElementById('valor').value);
+            const notas = [100, 50, 10, 1];
+            let resultado = '';
+
+            for (let nota of notas) {
+                let qtdNotas = Math.floor(valor / nota);
+                if (qtdNotas > 0) {
+                    resultado += `${qtdNotas} nota(s) de R$${nota}<br>`;
+                    valor -= qtdNotas * nota;
+                }
+            }
+            document.getElementById('resultado').innerHTML = resultado;
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Caixa Eletrônico</title>
+</head>
+<body>
+    <h1>Simulador de Caixa Eletrônico</h1>
+    <input type="number" id="valor" placeholder="Digite o valor">
+    <button onclick="calcularNotas()">Calcular Notas</button>
+    <p id="resultado"></p>
+
+    <script>
+        function calcularNotas() {
+            let valor = parseInt(document.getElementById('valor').value);
+            const notas = [100, 50, 10, 1];
+            let resultado = '';
+
+            for (let nota of notas) {
+                let qtdNotas = Math.floor(valor / nota);
+                if (qtdNotas > 0) {
+                    resultado += `${qtdNotas} nota(s) de R$${nota}<br>`;
+                    valor -= qtdNotas * nota;
+                }
+            }
+            document.getElementById('resultado').innerHTML = resultado;
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronômetro</title>
+</head>
+<body>
+    <h1>Cronômetro</h1>
+    <p id="tempo">00:00</p>
+    <button onclick="iniciar()">Iniciar</button>
+    <button onclick="pausar()">Pausar</button>
+    <button onclick="zerar()">Zerar</button>
+
+    <script>
+        let tempo = 0;
+        let cronometro;
+        function formatarTempo(segundos) {
+            const minutos = Math.floor(segundos / 60);
+            const segundosRestantes = segundos % 60;
+            return `${String(minutos).padStart(2, '0')}:${String(segundosRestantes).padStart(2, '0')}`;
+        }
+
+        function iniciar() {
+            cronometro = setInterval(function() {
+                tempo++;
+                document.getElementById('tempo').innerText = formatarTempo(tempo);
+            }, 1000);
+        }
+
+        function pausar() {
+            clearInterval(cronometro);
+        }
+
+        function zerar() {
+            tempo = 0;
+            document.getElementById('tempo').innerText = formatarTempo(tempo);
+            clearInterval(cronometro);
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senhas Aleatórias</title>
+</head>
+<body>
+    <h1>Gerador de Senha</h1>
+    <input type="number" id="tamanho" placeholder="Tamanho da senha" min="1">
+    <button onclick="gerarSenha()">Gerar</button>
+    <p id="senha"></p>
+
+    <script>
+        function gerarSenha() {
+            const tamanho = document.getElementById('tamanho').value;
+            const caracteres = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()';
+            let senha = '';
+            for (let i = 0; i < tamanho; i++) {
+                senha += caracteres.charAt(Math.floor(Math.random() * caracteres.length));
+            }
+            document.getElementById('senha').innerText = `Senha gerada: ${senha}`;
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Sorteio</title>
+</head>
+<body>
+    <h1>Simulador de Sorteio</h1>
+    <input type="number" id="minimo" placeholder="Valor mínimo">
+    <input type="number" id="maximo" placeholder="Valor máximo">
+    <button onclick="sortear()">Sortear</button>
+    <p id="resultado"></p>
+
+    <script>
+        function sortear() {
+            const minimo = parseInt(document.getElementById('minimo').value);
+            const maximo = parseInt(document.getElementById('maximo').value);
+            const sorteado = Math.floor(Math.random() * (maximo - minimo + 1)) + minimo;
+            document.getElementById('resultado').innerText = `Número sorteado: ${sorteado}`;
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquete com Votos</title>
+</head>
+<body>
+    <h1>Enquete</h1>
+    <form id="enquete">
+        <label><input type="radio" name="opcao" value="Opção 1"> Opção 1</label><br>
+        <label><input type="radio" name="opcao" value="Opção 2"> Opção 2</label><br>
+        <label><input type="radio" name="opcao" value="Opção 3"> Opção 3</label><br>
+        <button type="button" onclick="votar()">Votar</button>
+    </form>
+    <h2>Resultados</h2>
+    <p>Opção 1: <span id="opcao1">0</span> votos</p>
+    <p>Opção 2: <span id="opcao2">0</span> votos</p>
+    <p>Opção 3: <span id="opcao3">0</span> votos</p>
+
+    <script>
+        let votos = { 'Opção 1': 0, 'Opção 2': 0, 'Opção 3': 0 };
+
+        function votar() {
+            const form = document.getElementById('enquete');
+            const opcaoSelecionada = form.querySelector('input[name="opcao"]:checked');
+            if (opcaoSelecionada) {
+                votos[opcaoSelecionada.value]++;
+                document.getElementById('opcao1').innerText = votos['Opção 1'];
+                document.getElementById('opcao2').innerText = votos['Opção 2'];
+                document.getElementById('opcao3').innerText = votos['Opção 3'];
+            } else {
+                alert('Selecione uma opção para votar.');
+            }
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Palavras e Letras</title>
+</head>
+<body>
+    <h1>Contador de Palavras e Letras</h1>
+    <textarea id="texto" placeholder="Digite um texto"></textarea><br>
+    <button onclick="contar()">Contar</button>
+    <p id="resultado"></p>
+
+    <script>
+        function contar() {
+            const texto = document.getElementById('texto').value.trim();
+            const palavras = texto.split(/\s+/).filter(Boolean);
+            const letras = texto.replace(/\s/g, '').length;
+            document.getElementById('resultado').innerText = `Palavras: ${palavras.length}, Letras: ${letras}`;
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Números Primos</title>
+</head>
+<body>
+    <h1>Verificador de Números Primos</h1>
+    <input type="number" id="numero" placeholder="Digite um número">
+    <button onclick="verificarPrimo()">Verificar</button>
+    <p id="resultado"></p>
+
+    <script>
+        function verificarPrimo() {
+            const numero = parseInt(document.getElementById('numero').value);
+            let isPrimo = true;
+
+            if (numero < 2) isPrimo = false;
+            for (let i = 2; i <= Math.sqrt(numero); i++) {
+                if (numero % i === 0) {
+                    isPrimo = false;
+                    break;
+                }
+            }
+
+            document.getElementById('resultado').innerText = isPrimo ? `${numero} é primo.` : `${numero} não é primo.`;
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro com Validação</title>
+</head>
+<body>
+    <h1>Cadastro</h1>
+    <form id="formCadastro">
+        <input type="text" id="nome" placeholder="Nome" required><br>
+        <input type="email" id="email" placeholder="E-mail" required><br>
+        <input type="password" id="senha" placeholder="Senha" required><br>
+        <button type="button" onclick="validarCadastro()">Cadastrar</button>
+    </form>
+    <p id="resultado"></p>
+
+    <script>
+        function validarCadastro() {
+            const nome = document.getElementById('nome').value;
+            const email = document.getElementById('email').value;
+            const senha = document.getElementById('senha').value;
+            const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            let mensagem = '';
+
+            if (!nome || !email || !senha) {
+                mensagem = 'Por favor, preencha todos os campos.';
+            } else if (!emailPattern.test(email)) {
+                mensagem = 'E-mail inválido.';
+            } else {
+                mensagem = 'Cadastro realizado com sucesso!';
+            }
+
+            document.getElementById('resultado').innerText = mensagem;
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Adivinhação</title>
+</head>
+<body>
+    <h1>Jogo de Adivinhação</h1>
+    <input type="number" id="chute" placeholder="Tente adivinhar (1-100)">
+    <button onclick="adivinhar()">Chutar</button>
+    <p id="resultado"></p>
+
+    <script>
+        const numeroSorteado = Math.floor(Math.random() * 100) + 1;
+
+        function adivinhar() {
+            const chute = parseInt(document.getElementById('chute').value);
+            let mensagem = '';
+
+            if (chute > numeroSorteado) {
+                mensagem = 'Tente um número menor.';
+            } else if (chute < numeroSorteado) {
+                mensagem = 'Tente um número maior.';
+            } else {
+                mensagem = 'Parabéns, você acertou!';
+            }
+
+            document.getElementById('resultado').innerText = mensagem;
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Notas Escolares</title>
+</head>
+<body>
+   
